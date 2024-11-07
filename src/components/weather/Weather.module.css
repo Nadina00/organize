@@ -1,0 +1,189 @@
+/* Основной контейнер компонента */
+.weather_container {
+    background-color: #e0f7fa; /* Легкий голубой фон */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    max-width: 400px; /* Максимальная ширина компонента */
+    margin: 20px auto; /* Центрирование компонента */
+    padding: 20px; /* Внутренний отступ */
+    text-align: center; /* Центрирование текста */
+    font-family: Arial, sans-serif; /* Основной шрифт */
+  }
+  
+  /* Заголовок компонента */
+  .weather_container h2 {
+    font-size: 24px; /* Размер шрифта заголовка */
+    margin-bottom: 15px; /* Отступ снизу */
+    color: #00796b; /* Темно-зеленый цвет */
+  }
+  
+  /* Температура */
+  .weather_temperature {
+    font-size: 36px; /* Размер шрифта температуры */
+    font-weight: bold; /* Жирный шрифт */
+    margin: 10px 0; /* Отступ сверху и снизу */
+    color: #ff5722; /* Оранжевый цвет */
+  }
+  
+  /* Состояние погоды (ясно, облачно и т.д.) */
+  .weather_condition {
+    font-size: 18px; /* Размер шрифта */
+    margin-bottom: 10px; /* Отступ снизу */
+    color: #616161; /* Серый цвет */
+  }
+  
+  /* Иконка погоды */
+  .weather_icon {
+    width: 80px; /* Ширина иконки */
+    height: 80px; /* Высота иконки */
+    margin-bottom: 10px; /* Отступ снизу */
+  }
+
+
+  
+  /* Вспомогательная информация (влажность, скорость ветра и т.д.) */
+  .weather-details {
+    display: flex; /* Выровнять элементы в строку */
+    justify-content: space-around; /* Равномерное распределение элементов */
+    margin-top: 20px; /* Отступ сверху */
+  }
+  
+  .weather-detail-item {
+    font-size: 16px; /* Размер шрифта */
+    color: #37474f; /* Темно-серый цвет */
+  }
+  
+  .weather-detail-item span {
+    font-weight: bold; /* Жирный шрифт для значений */
+  }
+  
+  .city_list_container {
+    max-width: 600px; /* Максимальная ширина */
+    margin: 20px auto; /* Центрирование на странице */
+    padding: 20px; /* Внутренний отступ */
+    background-color: #f4f6f8; /* Светло-серый фон */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    font-family: Arial, sans-serif; /* Основной шрифт */
+  }
+  
+  /* Заголовок списка */
+  .city-list-title {
+    font-size: 24px; /* Размер шрифта заголовка */
+    margin-bottom: 15px; /* Отступ снизу */
+    text-align: center; /* Центрирование заголовка */
+    color: #37474f; /* Темно-серый цвет */
+  }
+  
+  /* Стили для списка городов */
+  .city_list {
+    list-style: none; /* Убираем маркеры */
+    padding: 0; /* Убираем отступы */
+  }
+  
+  /* Стили для элементов списка */
+  .city-list-item {
+    display: flex; /* Горизонтальное расположение элементов */
+    justify-content: space-between; /* Равномерное распределение */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    padding: 10px 15px; /* Внутренние отступы */
+    margin: 10px 0; /* Отступ между элементами */
+    background-color: #ffffff; /* Белый фон элементов списка */
+    border-radius: 5px; /* Скругленные углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: background-color 0.3s ease; /* Анимация фона */
+  }
+  
+  /* Стили для ссылки города */
+  .city_list_link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #1976d2; /* Синий цвет */
+    font-weight: bold; /* Жирный шрифт */
+    transition: color 0.3s ease; /* Анимация цвета */
+  }
+  
+  .city_list_link:hover {
+    color: #0d47a1; /* Цвет при наведении */
+  }
+
+  .city_container {
+    max-width: 600px; /* Максимальная ширина */
+    margin: 20px auto; /* Центрирование на странице */
+    padding: 20px; /* Внутренние отступы */
+    background-color: #f9f9f9; /* Светлый фон */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    font-family: Arial, sans-serif; /* Основной шрифт */
+  }
+  
+  /* Стили для формы */
+  .city_form {
+    display: flex; /* Горизонтальное выравнивание */
+    justify-content: center; /* Центрирование элементов */
+    margin-bottom: 20px; /* Отступ снизу */
+  }
+  
+  .city_form input[type="text"] {
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Серая граница */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    flex: 1; /* Растягивание на всю доступную ширину */
+    margin-right: 10px; /* Отступ справа */
+    transition: border-color 0.3s ease; /* Переход для цвета границы */
+  }
+  
+  .city_form input[type="text"]:focus {
+    border-color: #4a90e2; /* Цвет границы при фокусе */
+    outline: none; /* Убираем стандартное выделение */
+  }
+  
+  .city_form button {
+    padding: 10px 15px; /* Внутренние отступы */
+    background-color: #4a90e2; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Без границы */
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer; /* Курсор-указатель */
+    transition: background-color 0.3s ease; /* Переход для фона */
+  }
+  
+  .city_form button:hover {
+    background-color: #357ab8; /* Темный цвет при наведении */
+  }
+  
+  /* Стили для списка городов */
+  .city_list {
+    list-style: none; /* Убираем стандартные маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 0; /* Убираем внешние отступы */
+  }
+  
+  /* Элементы списка городов */
+  .city_list-item {
+    display: flex; /* Горизонтальное выравнивание */
+    justify-content: space-between; /* Равномерное распределение */
+    align-items: center; /* Вертикальное выравнивание */
+    padding: 15px; /* Внутренние отступы */
+    margin-bottom: 10px; /* Отступ снизу */
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 5px; /* Скругленные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Переход для анимации */
+  }
+  
+  .city_list_item:hover {
+    transform: translateY(-2px); /* Поднятие элемента при наведении */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Усиление тени при наведении */
+  }
+  
+  /* Сообщение о загрузке или ошибке */
+  .city_message {
+    text-align: center; /* Центрирование текста */
+    color: #555; /* Серый цвет */
+    font-size: 18px; /* Размер шрифта */
+    margin-top: 20px; /* Отступ сверху */
+  }
+  
+
+  

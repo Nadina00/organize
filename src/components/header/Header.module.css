@@ -1,0 +1,62 @@
+.header {
+    background-color: #4a90e2; /* Цвет фона */
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  }
+  
+  .header_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .header_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .header_date {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .header_nav ul {
+    display: flex;
+    gap: 20px; /* Расстояние между пунктами меню */
+  }
+  
+  .link {
+    list-style: none;
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Анимация смены цвета */
+  }
+  
+  .link:hover {
+    color: #ffd700; /* Цвет при наведении */
+  }
+  
+  .logout_button {
+    background-color: #e74c3c; /* Красная кнопка "Выход" */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout_button:hover {
+    background-color: #c0392b; /* Цвет при наведении */
+  }
