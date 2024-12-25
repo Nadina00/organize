@@ -52,8 +52,8 @@ const contactsSlice = createSlice({
     builder.addCase(
       contactsOperations.contactsDel.fulfilled,
       (state, action) => {
-        state.contacts = state.contacts.filter(
-          ({ id }) => id !== action.payload._id
+          state.contacts = state.contacts.filter(
+          ({ _id }) => _id !== action.payload._id
         );
 
         state.isLoggind = false;
